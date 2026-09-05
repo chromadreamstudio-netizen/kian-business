@@ -111,7 +111,8 @@ const dict = {
 };
 
 export default function KianBusiness() {
-  const [lang, setLang] = useState<'en' | 'ar'>('ar');
+  // التغيير تم هنا: 'en' هي اللغة الافتراضية بدلاً من 'ar'
+  const [lang, setLang] = useState<'en' | 'ar'>('en');
   const t = dict[lang];
   const isRtl = lang === 'ar';
 
