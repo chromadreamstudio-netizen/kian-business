@@ -18,9 +18,26 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+// تم إضافة OpenGraph لضمان ظهور المعاينة في لينكد إن وتويتر وواتساب
 export const metadata: Metadata = {
   title: "Kian Solutions | Telecom AI & Data Architecture",
   description: "Eliminating SLA Penalties via Data Warehousing & AI Automation for Telecom Contractors in MENA.",
+  openGraph: {
+    title: "Kian Solutions | Telecom AI & Data Architecture",
+    description: "Eliminating SLA Penalties via Data Warehousing & AI Automation for Telecom Contractors in MENA.",
+    url: "https://kian.business",
+    siteName: "Kian Solutions",
+    images: [
+      {
+        url: "/logo.png", 
+        width: 1200,
+        height: 630,
+        alt: "Kian Solutions Enterprise B2B SaaS",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
